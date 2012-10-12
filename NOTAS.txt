@@ -1,0 +1,77 @@
+Notas diseño placa no frost:
+----------------------------
+
+La placa prototipo tendra entradas de alimentación desde la red eléctrica 220v y desde una fuente de tensón que
+entregarán 5 y 12 v; para las primeras pruebas utilizar la alimentaciónde la fuente regulada, luego probar la
+alimentacíon de línea y ver que cumpla con los requerimientos de corriente (ver primero consumo general con la 
+fuente regulada, poner amperímetro a la entrada).
+
+El encendido de los triac (controlan resistencia y forzador*) se hará mediante MOC para aislar las entradas y salidas, 
+se pueden realizar sin estos IC, pero del modo utilizado será mas robusto y flexible.
+
+El encendido del motor se realizará con un rele, hay q ver si es posible conseguir un rele de 5v a 12v.
+
+Para el AD se utilizaran potenciometros, luego se verán los valores y se fijaran con resistencias.
+
+Las IO del microcontrolador libres iran a un conector auxiliar para que queden disponible ante cualquier modificación
+o agregado al circuito.
+
+Ver la frecuencia de trabajo optima y caps del cristal.
+
+La prueba de alimentacion con 220v sera la ULTIMA prueba que se realizará una vez armada la placa.
+
+triac con trnasistores VER!
+
+gnd y 200vtierra???
+
+Se modifica el circuito basico de encendido por triac debido a que el forzador esta conectado a la linea 220v+ HOT y no en NEUTRAL como en los cir
+
+Agregar modos de funcionamientos ctes de arranque y pare.
+
+Agregar fusible ?? forzador
+
+agregar leds en las salidas q encienden motores res forz y otros...
+
+cuanto consume un motocompresor?? 2A
+
+PTC o NTC ??
+
+----------------
+ poca corriente del orden de los 100 a 200mA o menos
+-----------------
+Cuando las cargas son inductivas generan transcientes muy altos si se usa reles, esto debido a que el encendido no es sincronizado al cruce por cero de la onda senoidal.
+
+Es mejor usar un triac. Si el control es ON-OFF unicamente, usa un optotriac (MOC3041 por ejemplo) con detector de cruce por cero.
+-----
+
+figura triac
+
+hola a todos, les comento mi problema:
+
+estoy armando un modulo de expansion para una placa entreanadora de pics (http://www.todopic.com.ar/foros/index.php?topic=21564.0 ), dicho modulo será para controlar cargas de corriente alterna de 220v hasta 16A, para el mismo pienso utilizar un triac bt137 y un moc3041 para separar del pic la exitacion del gate del triac.
+Tengo algun conocimiento en torno al funcionamiento de los triacs (sus cuadrantes de disparo, la necesidad de un detector de cruce por cero para poder ajustar los tiempos de disparo del mismo etc.) pero mi confucion es en torno al moc3041. 
+El objetivo de este modulo es usar los triacs como reles (on-off) y como variador de potencia, es decir dimmers, variador de velocidad para motores etc.
+Basicamente el circuito que voy a implementar es el que aparece como ejemplo en la hoja de datos del 3041, con la diferencia de que en la pata 1 del integrado ira una salida del pic y la pata dos del integrado ira a masa.
+
+En la hoja de datos del moc3041 aclara que el mismo cuenta con un circuito de deteccion de cruce por cero y aqui radica mi duda, ¿esto quiere decir que no necesito de un circuito extra para realizar esa tarea que le "informe" al pic cuando la señal ac pasa por cero, para que este pueda calcular los tiempos de disparo?, ¿simplemente me alcanzaria con saber que si la frecuencia de red es de 50hz con variar el ancho de un pulso entre cero y diez milisegundos estraria variando el disparo del triack de 0% a 100% de la carga?
+
+Hola, te comento que si vas a emplear el triac como rele de estado solido, puedes emplear perfectamente el MOC que mencionas...
+con respecto al circuito detector de cruce por cero, es para que realice justamente la conmutacion en el correspondiente paso por cero de la tension de lalimentacion... es decir, solamente tienes que enviar la tension de control  al MOC, y este "disparará" al triac, en la proxima transicion (no en el mmento justo en que alimentas al MOC)
+Pero justamente, este MOC, no te serviria para controlar la potencia por angulo de disparo, tendras que emplear el MOC3020  (lo escribo de memoria...)
+
+la carga se conecta al neutro por una cuestion de seguridad para la manipulacion del circuito, es decir, supongamos que la carga es una lampara alogena comun y corriente, si estuviera conectada al vivo (hot), con el circuito apagado, y quisieramos cambiarla por otra, estariamos manipulando la lampara sobre el vivo de la linea, si por accidente tocamos el portalampara nos quedariamos pegados, en cambio si la lampara estubiera conectada al neutro, cuando la queramos cambiar no correriamos ese riesgo (con el triac apagado). Claro esta que todo esto funciona en redes electricas que esten hechas siguiendo las normas (cosa muy poco probable). En el caso de los enchufes de dos patitas esto se complica un poco, tendrias que tener identificado en el toma y en el enchufe cual es el neutro para evitar correr ese riesgo. A los fines del circuito no implica ningun riesgo que la carga este en el neutro o en el vivo.
+
+0.000001001
+
+----------------------------------
+
+ver conexion 220v !! masas! polaridad!
+
+ver poner varistor
+
+agregar pines para programcion in situ
+
+preveer conexion de zocalos, diodos, relee, borneras para agujeros no metalizados.
+
+ver puerto de inerrupcion en q lugar conviene utilizarlo
+

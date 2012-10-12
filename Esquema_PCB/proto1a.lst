@@ -1,0 +1,183 @@
+eeschema (2012-01-19 BZR 3256)-stable  >> Creation date: 20/05/2012 09:31:35 p.m.
+
+#Componentes ( orden = Referencia )
+| C1         1.2uF / 250v
+| C2         15pF        
+| C3         15pF        
+| C4         100nF       
+| C5         100nF       
+| C6         470uF / 25v 
+| C7         100nF       
+| C8         10nF / 400v 
+| C9         10nF / 400v 
+| C10        100nF       
+| C11        4.7uF / 100V
+| C12        1uF / 100V  
+| C13        1uF         
+| C14        100nF       
+| C15        100nF       
+| C16        100nF       
+| C17        100nF       
+| D1         LED         
+| D2         LED         
+| D3         1N4148      
+| D4         12v / 1W    
+| D5         1N4007      
+| D6         LED         
+| D7         12v         
+| D8         LED         
+| D9         5V          
+| D10        5V          
+| D11        1N4007      
+| D12        1N4007      
+| D13        1N4007      
+| JP1        JUMPER      
+| JP2        JUMPER      
+| JP3        JUMPER      
+| JP4        JUMPER      
+| JP5        JUMPER      
+| JP6        JUMPER      
+| JP7        JUMPER      
+| JP8        JUMPER      
+| JP9        JUMPER      
+| JP10       JUMPER      
+| JP11       JUMPER      
+| JP12       JUMPER      
+| JP13       JUMPER      
+| JP14       JUMPER      
+| JP15       JUMPER      
+| JP16       JUMPER      
+| JP17       JUMPER      
+| K1         CONN_3      
+| P1         CONN_5      
+| P2         CONN_5      
+| Q1         BC547C      
+| R1         330         
+| R2         330         
+| R3         47 / 7W     
+| R4         10k         
+| R5         1M          
+| R6         1k          
+| R7         330 1/2 W   
+| R8         330 1/2 W   
+| R9         360 1/2 W   
+| R10        360 1/2 W   
+| R11        220         
+| R12        270         
+| R13        39 / 1W     
+| R14        39 / 1W     
+| R15        4k7         
+| R16        1k          
+| R17        100k        
+| R18        100k        
+| R19        10k         
+| R20        0           
+| R21        47k         
+| R22        4k7         
+| R23        1M          
+| R24        1M          
+| RV1        100k        
+| RV2        10M         
+| RV3        100k        
+| SW1        SW_PUSH     
+| SW2        SW_PUSH     
+| U1         MOC3041     
+| U2         MOC3041     
+| U3         TIC 2260    
+| U4         TIC 2260    
+| U5         PIC16F88    
+| U6         RELAY       
+| X1         QUARTZCMS4  
+#Fin Componentes
+
+#Componentes ( orden = Valor )
+| 0            R20       
+| 1.2uF / 250v C1        
+| 100k         R17       
+| 100k         R18       
+| 100k         RV1       
+| 100k         RV3       
+| 100nF        C4        
+| 100nF        C5        
+| 100nF        C7        
+| 100nF        C10       
+| 100nF        C14       
+| 100nF        C15       
+| 100nF        C16       
+| 100nF        C17       
+| 10k          R4        
+| 10k          R19       
+| 10M          RV2       
+| 10nF / 400v  C8        
+| 10nF / 400v  C9        
+| 12v          D7        
+| 12v / 1W     D4        
+| 15pF         C2        
+| 15pF         C3        
+| 1k           R6        
+| 1k           R16       
+| 1M           R5        
+| 1M           R23       
+| 1M           R24       
+| 1N4007       D5        
+| 1N4007       D11       
+| 1N4007       D12       
+| 1N4007       D13       
+| 1N4148       D3        
+| 1uF          C13       
+| 1uF / 100V   C12       
+| 220          R11       
+| 270          R12       
+| 330          R1        
+| 330          R2        
+| 330 1/2 W    R7        
+| 330 1/2 W    R8        
+| 360 1/2 W    R9        
+| 360 1/2 W    R10       
+| 39 / 1W      R13       
+| 39 / 1W      R14       
+| 4.7uF / 100V C11       
+| 47 / 7W      R3        
+| 470uF / 25v  C6        
+| 47k          R21       
+| 4k7          R15       
+| 4k7          R22       
+| 5V           D9        
+| 5V           D10       
+| BC547C       Q1        
+| CONN_3       K1        
+| CONN_5       P1        
+| CONN_5       P2        
+| JUMPER       JP1       
+| JUMPER       JP2       
+| JUMPER       JP3       
+| JUMPER       JP4       
+| JUMPER       JP5       
+| JUMPER       JP6       
+| JUMPER       JP7       
+| JUMPER       JP8       
+| JUMPER       JP9       
+| JUMPER       JP10      
+| JUMPER       JP11      
+| JUMPER       JP12      
+| JUMPER       JP13      
+| JUMPER       JP14      
+| JUMPER       JP15      
+| JUMPER       JP16      
+| JUMPER       JP17      
+| LED          D1        
+| LED          D2        
+| LED          D6        
+| LED          D8        
+| MOC3041      U1        
+| MOC3041      U2        
+| PIC16F88     U5        
+| QUARTZCMS4   X1        
+| RELAY        U6        
+| SW_PUSH      SW1       
+| SW_PUSH      SW2       
+| TIC 2260     U3        
+| TIC 2260     U4        
+#Fin Componentes
+
+#Fin de Lista
