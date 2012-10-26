@@ -1,0 +1,209 @@
+eeschema (2012-01-19 BZR 3256)-stable  >> Creation date: 24/10/2012 11:42:51 p.m.
+
+#Componentes ( orden = Referencia )
+| 10nF1      CAPAPOL     
+| C1         2.2uF / 250v
+| C2         470uF / 25v 
+| C3         100nF       
+| C4         22pF        
+| C5         100nF       
+| C6         15pF        
+| C7         15pF        
+| C8         1uF / 100V  
+| C9         4.7uF / 100V
+| C10        100nF       
+| C11        100nF       
+| C12        100nF       
+| C13        100nF       
+| C14        100nF       
+| C15        100nF       
+| C16        100nF       
+| C17        100nF       
+| D1         1N4007      
+| D2         1N4007      
+| D3         1N4007      
+| D4         12v / 1W    
+| D5         5v          
+| D6         LED         
+| D7         1N4007      
+| D8         1N4148      
+| D9         1N4007      
+| D10        1N4007      
+| D11        5V          
+| D12        5V          
+| D13        1N4007      
+| D14        1N4007      
+| JP1        JUMPER      
+| JP2        JUMPER      
+| JP3        JUMPER      
+| JP4        JUMPER      
+| JP5        JUMPER      
+| JP6        JUMPER      
+| JP7        JUMPER      
+| JP8        JUMPER      
+| JP9        JUMPER      
+| JP10       JUMPER      
+| JP11       JUMPER      
+| JP12       JUMPER      
+| JP13       JUMPER      
+| JP14       JUMPER      
+| JP15       JUMPER      
+| JP16       JUMPER      
+| JP17       JUMPER      
+| JP18       JUMPER      
+| K1         CONN_3      
+| P1         CONN_5      
+| P2         220v        
+| P3         CONN_2      
+| P4         CONN_2      
+| P5         BOT         
+| P6         CONN_2      
+| P7         Sensor      
+| P8         CONN_2      
+| P9         CONN_1      
+| P10        CONN_1      
+| Q1         BC547C      
+| Q2         BC547C      
+| Q3         BC547C      
+| Q4         BC547C      
+| R1         TERMISTOR   
+| R2         47 / 5W     
+| R3         20k         
+| R4         1M          
+| R5         220         
+| R6         270         
+| R7         220         
+| R8         330 1/2w    
+| R9         20k         
+| R10        360 1/2w    
+| R11        39          
+| R12        20k         
+| R13        10k         
+| R14        100         
+| R15        20k         
+| R16        100k        
+| R17        100k        
+| R18        10k         
+| R19        10k         
+| R20        47k         
+| R21        47k         
+| R22        1M          
+| R23        1M          
+| R24        4k7         
+| R25        4k7         
+| RV1        10M         
+| RV2        10M         
+| U1         RELAY       
+| U2         MOC3041     
+| U3         bt136 / bt137
+| U4         RELAY       
+| U5         RELAY       
+| U6         PIC16F88    
+| U7         RELAY       
+| X1         20 MHZ      
+#Fin Componentes
+
+#Componentes ( orden = Valor )
+| 100          R14       
+| 100k         R16       
+| 100k         R17       
+| 100nF        C3        
+| 100nF        C5        
+| 100nF        C10       
+| 100nF        C11       
+| 100nF        C12       
+| 100nF        C13       
+| 100nF        C14       
+| 100nF        C15       
+| 100nF        C16       
+| 100nF        C17       
+| 10k          R13       
+| 10k          R18       
+| 10k          R19       
+| 10M          RV1       
+| 10M          RV2       
+| 12v / 1W     D4        
+| 15pF         C6        
+| 15pF         C7        
+| 1M           R4        
+| 1M           R22       
+| 1M           R23       
+| 1N4007       D1        
+| 1N4007       D2        
+| 1N4007       D3        
+| 1N4007       D7        
+| 1N4007       D9        
+| 1N4007       D10       
+| 1N4007       D13       
+| 1N4007       D14       
+| 1N4148       D8        
+| 1uF / 100V   C8        
+| 2.2uF / 250v C1        
+| 20 MHZ       X1        
+| 20k          R3        
+| 20k          R9        
+| 20k          R12       
+| 20k          R15       
+| 220          R5        
+| 220          R7        
+| 220v         P2        
+| 22pF         C4        
+| 270          R6        
+| 330 1/2w     R8        
+| 360 1/2w     R10       
+| 39           R11       
+| 4.7uF / 100V C9        
+| 47 / 5W      R2        
+| 470uF / 25v  C2        
+| 47k          R20       
+| 47k          R21       
+| 4k7          R24       
+| 4k7          R25       
+| 5v           D5        
+| 5V           D11       
+| 5V           D12       
+| BC547C       Q1        
+| BC547C       Q2        
+| BC547C       Q3        
+| BC547C       Q4        
+| BOT          P5        
+| bt136 / bt137 U3        
+| CAPAPOL      10nF1     
+| CONN_1       P9        
+| CONN_1       P10       
+| CONN_2       P3        
+| CONN_2       P4        
+| CONN_2       P6        
+| CONN_2       P8        
+| CONN_3       K1        
+| CONN_5       P1        
+| JUMPER       JP1       
+| JUMPER       JP2       
+| JUMPER       JP3       
+| JUMPER       JP4       
+| JUMPER       JP5       
+| JUMPER       JP6       
+| JUMPER       JP7       
+| JUMPER       JP8       
+| JUMPER       JP9       
+| JUMPER       JP10      
+| JUMPER       JP11      
+| JUMPER       JP12      
+| JUMPER       JP13      
+| JUMPER       JP14      
+| JUMPER       JP15      
+| JUMPER       JP16      
+| JUMPER       JP17      
+| JUMPER       JP18      
+| LED          D6        
+| MOC3041      U2        
+| PIC16F88     U6        
+| RELAY        U1        
+| RELAY        U4        
+| RELAY        U5        
+| RELAY        U7        
+| Sensor       P7        
+| TERMISTOR    R1        
+#Fin Componentes
+
+#Fin de Lista
