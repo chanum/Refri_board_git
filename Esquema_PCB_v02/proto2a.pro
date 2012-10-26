@@ -1,16 +1,6 @@
-update=22/10/2012 11:28:04 p.m.
+update=24/10/2012 11:14:05 p.m.
 version=1
-last_client=eeschema
-[cvpcb]
-version=1
-NetITyp=0
-NetIExt=.net
-PkgIExt=.pkg
-NetDir=
-LibDir=
-NetType=0
-[cvpcb/libraries]
-EquName1=devcms
+last_client=cvpcb
 [pcbnew]
 version=1
 PadDrlX=320
@@ -66,7 +56,6 @@ MaxLnkS=3
 ShowRat=0
 ShowMRa=1
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -77,6 +66,12 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
+LibName11=w_misc_comp
+LibName12=w_pth_resistors
+LibName13=w_relay
+LibName14=w_to
+LibName15=f_r_relays
+LibDir=
 [general]
 version=1
 [eeschema]
@@ -142,3 +137,8 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=D:/Proyectos/refrigeracion/Esquema_PCB_v01/refri
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
